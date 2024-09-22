@@ -102,7 +102,16 @@ subject_keyword = "WE HAVE MADE RTGS FOR SUPPLIER DUE LIST ON"
 fabric_keyword = "Fabric Division"
 num_emails = st.number_input("Number of emails to fetch", min_value=1, max_value=100)
 
-if st.button("Fetch Emails"):
+st.markdown("""
+    <style>
+    .stButton>button {
+        background-color: green;
+        color: white;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+if st.button("Fetch Data"):
     if username and password:
         mail = connect_to_gmail(username, password)
         results = fetch_emails(mail, subject_keyword, fabric_keyword, num_emails)
