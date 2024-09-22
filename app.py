@@ -130,3 +130,9 @@ if st.button("Fetch Data"):
         mail.logout()
     else:
         st.error("Please enter your Gmail credentials.")
+
+st.write("## Contact Details")
+st.write("### Anthonysamy K ")
+st.write("**Phone :** 9942024792")
+st.write("**Address :** Andalpuram , Rajapalayam")
+st.markdown('**Instagram:** [@Lakshmi Crane Service](https://www.instagram.com/lakshmi_crane_services/)')
